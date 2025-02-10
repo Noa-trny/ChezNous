@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support - Location Saisonnière</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="lien-header">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="categorie-tendances.html">Tendances</a></li>
+          <li><a href="categorie-villes.html">Villes</a></li>
+          <li><a href="categorie-evenements.html">Événements</a></li>
+          <li><a href="categorie-types.html">Types de biens</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="support">
+        <h2>Contactez-nous</h2>
+        <p>
+          Pour toute question ou demande d'assistance, veuillez remplir le
+          formulaire ci-dessous :
+        </p>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="49782a9f-fac5-4c2e-bd74-0514ba091669"
+          />
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Votre nom complet"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre adresse email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Votre message..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 ChezNous. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+
+.pstyle {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.pstyle:hover {
+    background-color: #01538A;
+    color: white;
+    
+  }
+
+.voir{
+    white-space: pre-line;
+}
+
+
+
+a {
+    text-decoration: none; 
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header {
+    background-color: #16547D;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    align-items:center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main{
+    margin: 20px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.categorie, .logement {
+    flex: 1 1 calc(25% - 20px);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 25px ;
+    
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.lien-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.support {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.support h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.support p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #16547D;
+    outline: none;
+}
+
+
+.btn-submit {
+    background-color: #16547D;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #163C8D;
+}
+
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galerie img {
+    width: calc(33.33% - 10px);
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.product-card {
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .categorie, .logement {
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .support {
+        padding: 20px;
+    }
+    .btn-submit {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .galerie {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .galerie img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 50px;
+  }
+}
