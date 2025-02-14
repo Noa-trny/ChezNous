@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="dropdown">
                 <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
-                    <a href="pages/categorie-tendances.html">Tendances</a>
-                    <a href="pages/categorie-villes.html">Villes</a>
-                    <a href="pages/categorie-evenements.html">Événements</a>
-                    <a href="pages/categorie-types.html">Types de biens</a>
+                    <a href="${basePath}pages/categorie-tendances.html">Tendances</a>
+                    <a href="${basePath}pages/categorie-villes.html">Villes</a>
+                    <a href="${basePath}pages/categorie-evenements.html">Événements</a>
+                    <a href="${basePath}pages/categorie-types.html">Types de biens</a>
                 </div>
-                <a href="pages/support.html">Support</a>
+                <a href="${basePath}support.html">Support</a>
             </div>
         </header>
     `;
